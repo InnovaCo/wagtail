@@ -108,7 +108,10 @@ body {
     position: relative;
     background-color: $color-grey-4;
     border-bottom: 1px solid $color-grey-3;
-    box-shadow: -2px 0 2px rgba(#000,.1)
+
+    .nav-wrapper + & {
+        box-shadow: -2px 0 2px rgba(#000,.1);
+    }
 }
 
 .content {
