@@ -107,3 +107,8 @@
     font-family: 'Humanist', 'Trebuchet MS', Helvetica, sans-serif;
     font-weight: normal;
 }
+
+@mixin font-black() {
+    font-family: 'HMN95_KIDZO', 'Arial Black', Gadget, sans-serif;
+    font-weight: normal;
+}
