@@ -15,10 +15,24 @@
 //  See https://css-tricks.com/snippets/css/using-font-face/ for more information.
 
 
-@include webfont(Open Sans, opensans-light, 300, normal);
-@include webfont(Open Sans, opensans-regular, 400, normal);
-@include webfont(Open Sans, opensans-semibold, 600, normal);
-@include webfont(Open Sans, opensans-bold, 700, normal);
+// @include webfont(Open Sans, opensans-light, 300, normal);
+// @include webfont(Open Sans, opensans-regular, 400, normal);
+// @include webfont(Open Sans, opensans-semibold, 600, normal);
+// @include webfont(Open Sans, opensans-bold, 700, normal);
+
+@font-face {
+    font-family: 'Humanist';
+    src: url('/static/fonts/HMN55.eot');
+    src: url('/static/fonts/HMN55.eot#iefix') format('embedded-opentype'), url('/static/fonts/HMN55.woff2') format('woff2'), url('/static/fonts/HMN55.woff') format('woff'), url('/static/fonts/HMN55.ttf') format('truetype'), url('/static/fonts/HMN55.svg#HMN55') format('svg')
+}
+
+@font-face {
+    font-family: 'Humanist Bold';
+    src: url('/static/fonts/HMN75.eot');
+    src: url('/static/fonts/HMN75.eot#iefix') format('embedded-opentype'), url('/static/fonts/HMN75.woff2') format('woff2'), url('/static/fonts/HMN75.woff') format('woff'), url('/static/fonts/HMN75.ttf') format('truetype'), url('/static/fonts/HMN75.svg#HMN75') format('svg');
+}
+
+
 @include webfont(Roboto Slab, robotoslab-regular, 400, normal);
 @include webfont(Roboto Slab, robotoslab-bold, 700, normal);
 

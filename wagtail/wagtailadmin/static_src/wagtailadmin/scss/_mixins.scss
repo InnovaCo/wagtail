@@ -96,3 +96,14 @@
         font-style: $style;
     }
 }
+
+
+@mixin font-bold() {
+    font-family: 'Humanist Bold', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-normal() {
+    font-family: 'Humanist', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: normal;
+}

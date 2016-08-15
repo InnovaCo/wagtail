@@ -89,7 +89,7 @@
         .kbd {
             position: absolute;
             right: 1em;
-            font-weight: 600;
+            // font-weight: 600;
             font-size: 0.8em;
             color: rgba(0, 0, 0, 0.3);
         }
@@ -417,6 +417,3 @@
 .is-open .u-toggle {
     display: block;
 }
-
-
-

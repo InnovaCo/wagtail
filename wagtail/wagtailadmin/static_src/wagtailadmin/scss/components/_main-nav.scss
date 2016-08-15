@@ -1,4 +1,4 @@
-$selected-highlight: darken($color-grey-1, 10%);
+$selected-highlight: $kidzania-orange;
 $submenu-color: darken($color-grey-1, 5%);
 
 .nav-wrapper {
@@ -8,10 +8,10 @@ $submenu-color: darken($color-grey-1, 5%);
     float: left;
     height: 100%;
     min-height: 800px;
-    background: $color-grey-1;
+    background: #fafafa;
 
     .inner {
-        background: $color-grey-1;
+        background: #fafafa;
     }
 }
 
@@ -34,6 +34,10 @@ $submenu-color: darken($color-grey-1, 5%);
     overflow: auto;
     width: 100%;
 
+    h1, h2 {
+        color: #999;
+    }
+
     ul,
     li {
         margin: 0;
@@ -41,27 +45,36 @@ $submenu-color: darken($color-grey-1, 5%);
         list-style-type: none;
     }
 
+    @media screen and (min-width: $breakpoint-mobile) {
+        ul {
+            padding-bottom: 40px
+        }
+
+    }
+
     li {
         @include transition(border-color 0.2s ease);
         position: relative;
     }
+
 
     a {
         @include transition(border-color 0.2s ease);
         -webkit-font-smoothing: auto;
         text-decoration: none;
         display: block;
-        color: #aaa;
+        color: #333;
         padding: 0.8em 1.7em;
         font-size: 0.95em;
         font-weight: 300;
 
+
         &:hover,
         &:focus {
             outline: none;
-            background-color: rgba(100, 100, 100, 0.15);
+            background-color: $kidzania-orange;
             color: $color-white;
-            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+            // text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -90,7 +103,7 @@ $submenu-color: darken($color-grey-1, 5%);
 
     .menu-active {
         background: $selected-highlight;
-        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+        // text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
 
         > a {
             border-left-color: $color-salmon;
@@ -137,6 +150,14 @@ $submenu-color: darken($color-grey-1, 5%);
         border: 0;
     }
 
+    a {
+        color: #aaa;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
     .wagtail-version {
         padding: 1.2em 1.7em;
         text-align: center;
@@ -167,19 +188,19 @@ $submenu-color: darken($color-grey-1, 5%);
 
     input {
         cursor: pointer;
-        border: 1px solid darken($color-grey-2, 10%);
-        background-color: darken($color-grey-2, 15%);
+        border: 1px solid #ccc;
+        background-color: #fff;
         color: #aaa;
         padding: 0.8em 2.5em 0.8em 1em;
 
         &:hover {
-            background-color: darken($color-grey-2, 10%);
+            background-color: #fff;
         }
 
         &:active,
         &:focus {
-            background-color: darken($color-grey-2, 5%);
-            color: $color-white;
+            background-color: #fff;
+            color: #000;
         }
     }
 
@@ -201,6 +222,7 @@ $submenu-color: darken($color-grey-1, 5%);
             height: 100%;
             line-height: 3.3em;
             padding: 0 1em;
+            color: $color-teal
         }
     }
 }
@@ -371,10 +393,10 @@ body.explorer-open {
     }
 
     li.submenu-active {
-        background: $submenu-color;
+        background: $kidzania-orange;
 
         > a {
-            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+            // text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
 
             &:hover {
                 background-color: transparent;

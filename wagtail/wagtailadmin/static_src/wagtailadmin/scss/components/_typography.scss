@@ -12,7 +12,8 @@ h1 {
     font-size: 1.5em;
     text-transform: uppercase;
     color: $color-grey-1;
-    font-weight: 600;
+    // font-weight: 600;
+    @include font-normal();
 
     span {
         text-transform: none;
@@ -27,8 +28,7 @@ h1 {
 h2 {
     text-transform: uppercase;
     font-size: 1.3em;
-    font-family: Open Sans;
-    font-weight: 600;
+    @include font-normal();
     color: $color-grey-2;
 
     .page-explorer & {
@@ -63,7 +63,7 @@ code {
 
 kbd {
     border-radius: 3px;
-    font-family: Open Sans, Arial, sans-serif;
+    @include font-normal();
     border: 1px solid $color-grey-2;
     border-color: rgba(0, 0, 0, 0.2);
     padding: 0.3em 0.5em;

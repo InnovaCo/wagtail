@@ -28,7 +28,7 @@ legend {
 label,
 .label {
     text-transform: none;
-    font-weight: bold;
+    @include font-normal();
     color: $color-grey-1;
     font-size: 1.1em;
     display: block;
@@ -50,14 +50,13 @@ select,
     box-sizing: border-box;
     border-radius: 6px;
     width: 100%;
-    font-family: Open Sans,Arial,sans-serif;
+    @include font-normal();
     border: 1px solid $color-input-border;
     padding: 0.9em 1.2em;
     background-color: $color-fieldset-hover;
     -webkit-appearance: none;
     color: $color-text-input;
     font-size: 1.2em;
-    font-weight: 300;
     outline: none;
 
     &:hover {
@@ -195,12 +194,11 @@ input[type=checkbox]:checked:before {
 // input[type=button],
 .button {
     border-radius: 3px;
-    font-family: Open Sans,Arial,sans-serif;
+    @include font-normal();
     width: auto;
     height: 2.4em;
     padding: 0 1em;
     font-size: 0.9em;
-    font-weight: normal;
     vertical-align: middle;
     display: inline-block;
     background-color: $color-button;
