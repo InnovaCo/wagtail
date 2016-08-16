@@ -1,5 +1,5 @@
 $selected-highlight: $kidzania-orange;
-$submenu-color: darken($color-grey-1, 5%);
+$submenu-color: #fafafa;
 
 .nav-wrapper {
     position: relative;
@@ -151,7 +151,7 @@ $submenu-color: darken($color-grey-1, 5%);
     }
 
     a {
-        color: #aaa;
+        color: #555;
 
         &:hover {
             color: #fff;
