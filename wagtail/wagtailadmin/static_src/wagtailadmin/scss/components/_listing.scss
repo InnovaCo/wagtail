@@ -197,9 +197,9 @@ ul.listing {
     .actions {
         @include clearfix();
         margin-top: 0.8em;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         margin-bottom: -0.5em;
-        font-size: 0.8rem;
+        // font-size: 0.8rem;
 
         a {
             text-decoration: none;

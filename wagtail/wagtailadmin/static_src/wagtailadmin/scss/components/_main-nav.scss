@@ -63,10 +63,10 @@ $submenu-color: darken($color-grey-1, 5%);
         -webkit-font-smoothing: auto;
         text-decoration: none;
         display: block;
-        color: #666;
+        color: #555;
         padding: 0.8em 1.7em;
-        font-size: 1.1em;
-        font-weight: 300;
+        font-size: 1em;
+        font-weight: normal;
 
 
         &:hover,
@@ -314,7 +314,7 @@ body.explorer-open {
     .nav-main {
         position: absolute;
         top: 175px; // WARNING - magic number - the height of the logo plus search box
-        margin-bottom: 116px; // WARNING - magic number - the height of the .footer
+        margin-bottom: 160px; // WARNING - magic number - the height of the .footer
 
         .footer {
             padding-top: 1em;

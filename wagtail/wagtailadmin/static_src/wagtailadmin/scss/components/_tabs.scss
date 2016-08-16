@@ -18,13 +18,13 @@
         outline: none;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1.2em;
+        font-size: 1em;
         text-decoration: none;
         display: block;
         padding: 0.7em;
         color: $color-white;
         border-top: 0.3em solid lighten($color-teal-darker, 3%);
-        max-height: 1.2em;
+        max-height: 1.5em;
         overflow: hidden;
 
         &:hover {
@@ -93,7 +93,7 @@
 
 @media screen and (min-width: $breakpoint-mobile) {
     .tab-nav {
-        // For cases where tab-nav should merge with header 
+        // For cases where tab-nav should merge with header
         &.merged {
             background-color: $color-header-bg;
         }

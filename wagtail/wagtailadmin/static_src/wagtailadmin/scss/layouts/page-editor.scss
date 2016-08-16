@@ -323,8 +323,8 @@
 .full .richtext {
     @include nice-padding();
     border-radius: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 1.2em;
     line-height: 1.6em;
 }
@@ -333,8 +333,7 @@
 .title textarea,
 .title .richtext {
     font-size: 2em;
-    font-family: $font-serif;
-    font-weight: normal;
+    @include font-black();
 }
 
 // Footer control bar for perfoming actions on the page
