@@ -333,11 +333,13 @@ function initCollapsibleBlocks() {
 
 function initKeyboardShortcuts() {
     Mousetrap.bind(['mod+p'], function(e) {
+        disableDirtyFormCheck(); // KidZania
         $('.action-preview').trigger('click');
         return false;
     });
 
     Mousetrap.bind(['mod+s'], function(e) {
+        disableDirtyFormCheck(); // KidZania
         $('.action-save').trigger('click');
         return false;
     });
@@ -353,6 +355,28 @@ $(function() {
     initErrorDetection();
     initCollapsibleBlocks();
     initKeyboardShortcuts();
+
+    // KidZania
+    var $form = $('#page-edit-form');
+    var $comment = $('#change_notification_comment');
+    var $commentBox = $('.change_notification');
+
+    if ($comment.length) {
+        $form.submit(function(e) {
+            var val = $.trim($comment.val());
+            $form.toggleClass('_fixed-comment', !val);
+            if (!val) {
+                $commentBox.addClass('_fixed');
+
+                setTimeout(function() {
+                    $comment.focus();
+                    window.cancelSpinner && cancelSpinner();
+                }, 100);
+
+                return false;
+            }
+        });
+    }
 
     /* Set up behaviour of preview button */
     var previewWindow = null;
@@ -386,7 +410,7 @@ $(function() {
             $.ajax({
                 type: 'POST',
                 url: $this.data('action'),
-                data: $('#page-edit-form').serialize(),
+                data: $('#page-edit-form').serialize()+'&thisisforpreview=on', // KidZania
                 success: function(data, textStatus, request) {
                     if (request.getResponseHeader('X-Wagtail-Preview') == 'ok') {
                         if (enhanced) {
