@@ -33,7 +33,7 @@
         left: 0;
         font-size: 22px;
     }
-   
+
     &.small {
         vertical-align: middle;
         margin: 0 0.5em;
@@ -53,7 +53,7 @@
 
     &.avatar-on-dark:before {
         color: $color-grey-2;
-        border-color: $color-grey-2; 
+        border-color: $color-grey-2;
     }
 }
 
@@ -63,7 +63,7 @@
     background-color: #ccc;
     padding: 5px;
 
-    h3, 
+    h3,
     p {
         margin: 0;
     }
@@ -108,21 +108,21 @@
 
 // Status tags
 .status-tag {
-    border-radius: 2px;
+    border-radius: 3px;
     text-align: center;
     display: inline-block;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 0 0.5em;
-    border: 1px solid lighten($color-grey-2, 30%);
+    border: 1px solid rgba(0,0,0,.3);
     color: lighten($color-grey-2, 30%);
     -webkit-font-smoothing: auto;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 0 0.5em 0.5em;
     background: #fff url('#{$images-root}bg-dark-diag.svg');
 
     &.primary {
         color: $color-grey-2;
-        border: 1px solid $color-grey-2;
+        border: 1px solid rgba(0,0,0,.3);
         background: #fff;
     }
 }
@@ -132,7 +132,12 @@ a.status-tag:hover,
 a.status-tag.primary:hover {
     border-color: $color-teal;
     color: $color-teal;
+
+    header & {
+        border-color: #fff;
+    }
 }
+
 
 form.status-tag:hover {
     border-color: $color-teal-dark;
@@ -141,7 +146,7 @@ form.status-tag:hover {
 }
 
 .privacy-indicator {
-    .label-private, 
+    .label-private,
     .label-public {
         &:before {
             font-size: 1.5em;
@@ -150,7 +155,7 @@ form.status-tag:hover {
     }
 
     &.public {
-        .label-private { 
+        .label-private {
             display: none;
         }
     }
@@ -205,7 +210,7 @@ a.tag:hover {
     &.loading {
         position: relative;
 
-        &:before, 
+        &:before,
         &:after {
             position: absolute;
             display: block;
@@ -213,7 +218,7 @@ a.tag:hover {
 
         &:before {
             content: '';
-            top: -5px; 
+            top: -5px;
             left: -5px;
             bottom: -5px;
             right: -5px;
