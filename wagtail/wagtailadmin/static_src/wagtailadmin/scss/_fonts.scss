@@ -14,22 +14,4 @@
 //
 //  See https://css-tricks.com/snippets/css/using-font-face/ for more information.
 
-@font-face {
-    font-family: 'Humanist';
-    src: url('/static/fonts/HMN55.eot');
-    src: url('/static/fonts/HMN55.eot#iefix') format('embedded-opentype'), url('/static/fonts/HMN55.woff2') format('woff2'), url('/static/fonts/HMN55.woff') format('woff'), url('/static/fonts/HMN55.ttf') format('truetype'), url('/static/fonts/HMN55.svg#HMN55') format('svg')
-}
-
-@font-face {
-    font-family: 'Humanist Bold';
-    src: url('/static/fonts/HMN75.eot');
-    src: url('/static/fonts/HMN75.eot#iefix') format('embedded-opentype'), url('/static/fonts/HMN75.woff2') format('woff2'), url('/static/fonts/HMN75.woff') format('woff'), url('/static/fonts/HMN75.ttf') format('truetype'), url('/static/fonts/HMN75.svg#HMN75') format('svg');
-}
-
-@font-face {
-    font-family: 'HMN95_KIDZO';
-    src: url('/static/fonts/HMN95_KIDZO.eot');
-    src: url('/static/fonts/HMN95_KIDZO.eot#iefix') format('embedded-opentype'), url('/static/fonts/HMN95_KIDZO.woff2') format('woff2'), url('/static/fonts/HMN95_KIDZO.woff') format('woff'), url('/static/fonts/HMN95_KIDZO.ttf') format('truetype'), url('/static/fonts/HMN95_KIDZO.svg#HMN95_KIDZO') format('svg');
-}
-
 @import 'wagtailadmin/scss/font-icons';
